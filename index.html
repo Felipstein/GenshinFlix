@@ -5,9 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Genshinflix</title>
-    <link rel="shortcut icon" href="favicon.png" type="img/png">
+    <link rel="shortcut icon" href="img/favicon.png" type="img/png">
+
+    <link rel="stylesheet" href="style/style.css">
+
+    <script src="https://kit.fontawesome.com/190ff98b62.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
+
+    <header>
+        <div class="header-container">
+            <div class="left-container">
+                <a href="index.html"><img src="img/logo.png" alt="Logo GenshinImpact" id="logo"></a>
+                <nav>
+                    <a href="index.html" class="current-active">Início</a>
+                    <a href="#">Personagens</a>  
+                    <a href="#">Regiões</a>  
+                    <a href="#">Armas</a>  
+                    <a href="#">Novidades</a>
+                </nav>
+            </div>
+            <div class="right-container">
+                <div class="element">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="element">
+                    <i class="fas fa-bell"></i>
+                </div>
+                <div class="element">
+                    <div class="avatar-container">
+                        <img src="img/avatar-profile.png" alt="Avatar Profile" width="32" height="32" class="avatar-icon">
+                        <div class="avatar-options">
+                            <i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
     
+    <div class="background-video-container">
+        <video id="background-video">
+            <source src="img/background-intro-video.mp4" type="video/mp4">
+        </video>
+        <div class="left-cloud"></div>
+        <div class="info-section">
+            <div class="left-container">
+                <div class="big-logo"><a href="https://genshin.mihoyo.com/pt/" target="_blank"><img src="img/logo.png" alt="Logo" id="bottom-logo"></a></div>
+                <div class="sinopse">
+                    <p>Chegou a hora de irmos para Inazuma - está pronto, viajante? Este é o trailer oficial 
+                        fornecido pela transmissão ao vivo do Programa Especial da Versão 2.0</p>
+                </div>
+                <div class="buttons">
+                    <button class="button" id="play" onclick="toggleVideo()"><i class="fas fa-play"></i>Play</button>
+                    <button class="button" id="more-info" onclick="window.open('https://genshin.mihoyo.com/pt/', '_blank')"><i class="fas fa-info-circle"></i>Mais informações</button>
+                </div>
+            </div>
+            <div class="right-container">
+                <div class="mute">
+                    <button class="circle-button" id="mute" onclick="toggleMute()"><i class="fas fa-volume-up"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-cloud"></div>
+
+    <script src="js/style.js"></script>
+    <script src="js/video-control.js"></script>
+
 </body>
 </html>
