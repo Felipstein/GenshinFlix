@@ -166,6 +166,10 @@ header .header-container .right-container .avatar-icon {
     width: 500px;
 }
 
+.background-video-container .info-section .sinopse p {
+    text-shadow: 2px 2px 5px #141414;
+}
+
 .background-video-container .info-section .buttons {
     margin-top: 20px;
     display: flex;
