@@ -3,9 +3,12 @@ const video = document.getElementById('background-video');
 const playButton = document.getElementById('play');
 const muteButton = document.getElementById('mute');
 
+mute();
+
 setTimeout(() => {
-    mute();
-    toggleVideo();
+    if(video.paused) {
+        play();
+    }
 }, 2000);
 
 function toggleVideo() {

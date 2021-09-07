@@ -55,6 +55,7 @@ header .header-container .left-container nav a {
 header .header-container .left-container nav .current-active {
     color: var(--text-color-selected);
     font-weight: 600;
+    cursor: default;
 }
 
 header .header-container .left-container nav a:hover {
@@ -233,7 +234,87 @@ header .header-container .right-container .avatar-icon {
 .bottom-cloud {
     background-image: linear-gradient(rgba(20, 20, 20, 0), rgba(20, 20, 20, 1));
     position: relative;
-    top: -505px;
+    top: -513px;
     height: 200px;
     z-index: 2;
+}
+
+.catalogs-container {
+    position: absolute;
+    width: 100%;
+    top: 108vh;
+    z-index: 5;
+    font-family: Helvetica, sans-serif;
+    font-size: 21.04px;
+    color: #e5e5e5;
+    font-weight: 600;
+}
+
+.catalogs-container .catalog-carousel-container {
+    width: 90%;
+    margin: auto;
+    padding: auto;
+    margin-bottom: 44px;
+}
+
+.catalogs-container .catalog-carousel-container .c-carousel.c-carousel--simple {
+    margin-top: 14px;
+}
+
+.catalogs-container .catalog-carousel-container .c-carousel.c-carousel--simple {
+    margin-left: -5px;
+}
+
+.catalogs-container .catalog-carousel-container .c-carousel__slide {
+    margin-left: 5px;
+}
+
+.catalogs-container .catalog-carousel-container .person-img {
+    border-radius: 8px;
+}
+
+.catalogs-container .catalog-carousel-container .js-carousel--simple-dots {
+    position: absolute;
+    left: 90%;
+    top: 30px;
+}
+
+.catalogs-container .catalog-carousel-container .js-carousel--simple-dots button {
+    border-radius: 0;
+    height: 1px;
+    margin: 0;
+    margin-left: 3px;
+}
+
+.catalogs-container .catalog-carousel-container .js-carousel--simple-prev, .js-carousel--simple-next {
+    border: none;
+    font-size: 60px;
+    color: #e5e5e5;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 35px 6px;
+    border-radius: 5px;
+    transition: .3s;
+    position: absolute;
+    top: 35px;
+}
+
+.catalogs-container .catalog-carousel-container .js-carousel--simple-prev {
+    left: 8px;
+}
+
+.catalogs-container .catalog-carousel-container .js-carousel--simple-next {
+    left: 95.6%;
+}
+
+.catalogs-container .catalog-carousel-container .js-carousel--simple-prev:hover, .js-carousel--simple-next:hover {
+    color: var(--purple);
+    background-color: rgba(140, 140, 140, .1);
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.catalogs-container .catalog-carousel-container .js-carousel--simple-prev:active, .js-carousel--simple-next:active {
+    color: #53319e;
+    background-color: rgba(255, 255, 255, 1);
+    transition: .15s;
 }
