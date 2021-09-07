@@ -318,3 +318,41 @@ header .header-container .right-container .avatar-icon {
     background-color: rgba(255, 255, 255, 1);
     transition: .15s;
 }
+
+footer {
+    width: 75%;
+    margin: auto;
+    margin-top: -200px;
+    margin-bottom: 50px;
+    padding: auto;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #888;
+}
+
+footer .members-footer {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+footer .members-footer li {
+    width: 243px;
+    height: 33px;
+}
+
+footer a {
+    color: inherit;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin-top: 40px;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
